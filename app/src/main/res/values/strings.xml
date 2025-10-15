@@ -8,7 +8,7 @@
     <string name="precision">PRECISIÓN</string>
     <string name="calculando">Calculando...</string>
     <string name="mision_gravedad">MISIÓN GRAVEDAD</string>
-    <string name="detector_de_acelerometro">Detector de Acelerómetro</string>
+    <string name="detector_de_acelerometro">Detector de Acelerómetro, Giroscópio y Magnetismo</string>
     <string name="coordenadas">COORDENADAS</string>
     <string name="eje_x">Eje X:</string>
     <string name="eje_y">Eje Y:</string>

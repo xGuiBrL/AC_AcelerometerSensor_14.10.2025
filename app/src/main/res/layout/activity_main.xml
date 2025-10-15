@@ -13,13 +13,19 @@
         android:gravity="center"
         android:padding="24dp">
 
+        <!-- HEADER -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:backgroundTint="#1E1E2E"
-            android:elevation="8dp"
-            android:radius="20dp">
+            android:backgroundTint="#0B1220"
+            android:radius="24dp"
+            android:elevation="12dp"
+            android:outlineSpotShadowColor="#00D9FF"
+            android:outlineAmbientShadowColor="#00AEEF"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="4dp"
+            android:clipToOutline="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,13 +61,17 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- SENSORES DISPONIBLES -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="#1E1E2E"
+            android:backgroundTint="#2C2C2C"
+            android:radius="18dp"
             android:elevation="6dp"
-            android:radius="16dp">
+            android:outlineSpotShadowColor="#9E9E9E"
+            android:outlineAmbientShadowColor="#616161"
+            android:strokeColor="#BDBDBD">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,7 +82,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sensores disponibles"
+                    android:text="@string/sensores_disponibles"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="#00D9FF"
@@ -88,13 +98,19 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- ACELERÓMETRO -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="#1E1E2E"
-            android:elevation="6dp"
-            android:radius="16dp">
+            android:backgroundTint="#0B1220"
+            android:radius="24dp"
+            android:elevation="12dp"
+            android:outlineSpotShadowColor="#00D9FF"
+            android:outlineAmbientShadowColor="#00AEEF"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="4dp"
+            android:clipToOutline="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -196,31 +212,6 @@
                         android:textColor="#FFFFFF"
                         android:fontFamily="monospace" />
                 </LinearLayout>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="#1E1E2E"
-            android:elevation="6dp"
-            android:radius="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/estado_del_sensor"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFD93D"
-                    android:layout_marginBottom="12dp" />
 
                 <TextView
                     android:id="@+id/estado"
@@ -232,31 +223,8 @@
                     android:textColor="#E0E0E0"
                     android:gravity="center"
                     android:padding="12dp"
-                    android:background="@drawable/estado_background" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#1E1E2E"
-            android:elevation="6dp"
-            android:radius="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/precision"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#A78BFA"
-                    android:layout_marginBottom="12dp" />
+                    android:background="@drawable/estado_background"
+                    android:layout_marginTop="8dp" />
 
                 <TextView
                     android:id="@+id/precision"
@@ -268,18 +236,25 @@
                     android:gravity="center"
                     android:padding="12dp"
                     android:background="@drawable/precision_background"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- GIROSCOPIO -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="#1E1E2E"
-            android:elevation="6dp"
-            android:radius="16dp">
+            android:backgroundTint="#1C1027"
+            android:radius="30dp"
+            android:elevation="10dp"
+            android:outlineSpotShadowColor="#A78BFA"
+            android:outlineAmbientShadowColor="#6E56CF"
+            android:strokeColor="#C4A0FF"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clipToOutline="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -293,119 +268,35 @@
                     android:text="Giroscopio (rad/s)"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#00D9FF"
+                    android:textColor="#A78BFA"
                     android:layout_marginBottom="16dp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@drawable/coord_background"
-                    android:padding="12dp"
-                    android:layout_marginBottom="12dp"
-                    android:gravity="center_vertical">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/eje_x"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#FF6B6B" />
-
-                    <TextView
-                        android:id="@+id/xgiro"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0.00"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:fontFamily="monospace" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@drawable/coord_background"
-                    android:padding="12dp"
-                    android:layout_marginBottom="12dp"
-                    android:gravity="center_vertical">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/eje_y"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#51CF66" />
-
-                    <TextView
-                        android:id="@+id/ygiro"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0.00"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:fontFamily="monospace" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:background="@drawable/coord_background"
-                    android:padding="12dp"
-                    android:gravity="center_vertical">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/eje_z"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#4DABF7" />
-
-                    <TextView
-                        android:id="@+id/zgiro"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0.00"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:fontFamily="monospace" />
-                </LinearLayout>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="#1E1E2E"
-            android:elevation="6dp"
-            android:radius="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-
                 <TextView
+                    android:id="@+id/xgiro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/estado_del_sensor"
-                    android:textSize="16sp"
+                    android:text="X: 0.00"
+                    android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="#FFD93D"
-                    android:layout_marginBottom="12dp" />
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/ygiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Y: 0.00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/zgiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z: 0.00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/estadoGiro"
@@ -417,31 +308,8 @@
                     android:textColor="#E0E0E0"
                     android:gravity="center"
                     android:padding="12dp"
-                    android:background="@drawable/estado_background" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#1E1E2E"
-            android:elevation="6dp"
-            android:radius="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/precision"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#A78BFA"
-                    android:layout_marginBottom="12dp" />
+                    android:background="@drawable/estado_background"
+                    android:layout_marginTop="8dp" />
 
                 <TextView
                     android:id="@+id/precisionGiro"
@@ -453,18 +321,22 @@
                     android:gravity="center"
                     android:padding="12dp"
                     android:background="@drawable/precision_background"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <!-- MAGNETÓMETRO -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="#1E1E2E"
-            android:elevation="6dp"
-            android:radius="16dp">
+            android:elevation="14dp"
+            android:radius="26dp"
+            android:clipToOutline="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:background="@drawable/bg_magnetometro_card">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -478,7 +350,7 @@
                     android:text="Magnetómetro (µT)"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#00D9FF"
+                    android:textColor="#FFFFFF"
                     android:layout_marginBottom="16dp" />
 
                 <ProgressBar
@@ -488,7 +360,7 @@
                     android:layout_height="24dp"
                     android:max="200"
                     android:progress="0"
-                    android:progressTint="#4DABF7"
+                    android:progressTint="#00BCD4"
                     android:backgroundTint="#303042"
                     android:layout_marginBottom="8dp"
                     android:indeterminate="false" />
@@ -502,32 +374,6 @@
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
                     android:layout_gravity="center_horizontal" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="#1E1E2E"
-            android:elevation="6dp"
-            android:radius="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/estado_del_sensor"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFD93D"
-                    android:layout_marginBottom="12dp" />
 
                 <TextView
                     android:id="@+id/estadoMag"
@@ -539,31 +385,8 @@
                     android:textColor="#E0E0E0"
                     android:gravity="center"
                     android:padding="12dp"
-                    android:background="@drawable/estado_background" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#1E1E2E"
-            android:elevation="6dp"
-            android:radius="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/precision"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#A78BFA"
-                    android:layout_marginBottom="12dp" />
+                    android:background="@drawable/estado_background"
+                    android:layout_marginTop="8dp" />
 
                 <TextView
                     android:id="@+id/precisionMag"
@@ -575,7 +398,8 @@
                     android:gravity="center"
                     android:padding="12dp"
                     android:background="@drawable/precision_background"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
